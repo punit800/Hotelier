@@ -27,6 +27,7 @@ body{
     bottom: 20px;
     right: 20px; 
     text-align: center;
+    z-index: 20;
 }
 #arrow-main{
     padding: 10px;
@@ -591,6 +592,22 @@ h2{
     text-align: center;
     font-weight: 600;
 }
+.section-three .line-l{
+    width: 50px;
+    height: 3px; 
+    background-color: var(--primary);
+} 
+
+.section-three .line-left{
+    position: absolute;
+    top: 10px;
+    left: 25%;
+}
+.section-three .line-right{
+    position: absolute;
+    top: 10px;
+    right: 25%;
+}
 .three-h5{
    color: var(--primary);
 }
@@ -715,6 +732,12 @@ h2{
        display: flex;
        flex-direction: column;
     }
+    .section-three .line-left{
+        left: 20%;
+    } 
+    .section-three .line-right{
+        right: 20%;
+    }
     .btn-warning {
         padding: 10px !important;
     }
@@ -735,7 +758,14 @@ h2{
         border-radius: 3px;
         overflow: hidden; 
     }
-    
+    @media only  screen and (max-width:480px){
+        .section-three .line-left{
+            left: 9%;
+        } 
+        .section-three .line-right{
+            right: 9%;
+        }
+    }
 }
 
 /* three section  close */
