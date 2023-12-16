@@ -383,6 +383,9 @@ header{
             opacity: 1;
         }
         @media only screen and (max-width:465px){
+            .bg-body-tertiary{
+                height: 85px;
+            }
             .banner-contant{
                 min-width: 100%;
                 margin: 150px 10px 0 10px;
