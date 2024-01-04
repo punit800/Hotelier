@@ -14,3 +14,22 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
+
+arr.map(function(left_1box){
+    let startnumber = 0
+
+    function counterup(){
+        startnumber++
+        left_1box.innerHTML = startnumber
+
+        if(startnumber == left_1box.dataset.number){
+            clearInterval(stop)
+        }
+    }
+    let stop = setInterval(function(){
+        counterup()
+    },50)
+});
